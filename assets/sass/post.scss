@@ -1,0 +1,32 @@
+
+.post-content {
+    // For brosers that don't support gradient;
+    //background: -webkit-linear-gradient(left top, #0267c1, darken(#0267c1, 20%));
+    
+    border-left-width: 1.2px;
+    border-left-style: solid;
+    border-left-color: #0267c1;
+    padding-left: 5px;
+}
+
+a.post-title {
+    font-family: 'Bitwise', normal;
+    color: #ffc;
+}
+
+article.post-content {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a.post-category {
+    margin-left: 10px;
+    font-family: 'Bitwise', normal;
+}
+
+section.post {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    //background-color: rgba(1, 49, 20, 255);
+}

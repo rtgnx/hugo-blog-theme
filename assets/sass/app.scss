@@ -1,0 +1,51 @@
+// Font awesome
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+
+// Custom variables
+@import "_variables.scss";
+
+// Bootstrap
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+@import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa');
+
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Titillium+Web');
+
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Monda|Titillium+Web');
+
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+@font-face {
+    font-family: 'Bitwise';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bitwise'), url('/fonts/bitwise.woff') format('woff');
+}
+
+html, body {
+    background-color: darken(#0267c1, 20%);
+    color: #fff;
+}
+
+div.posts {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+div.sidebar {
+}
+
+div.sidebar-col {
+    padding-right: 0px;
+}
+
+h4.section-title {
+    font-family: 'Bitwise', normal;
+}
+
+
+@import "./sidebar.scss";
+
+@import "./post.scss";
+
+@import "./top.scss";

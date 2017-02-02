@@ -1,0 +1,12 @@
+name = "rtgnx"
+description = "My hugo theme"
+license = "MIT"
+source_repo = "https://github.com/rtgnx/hugo-blog-theme"
+tags = ["blog", "rtgnx"]
+min_version = 0.1
+
+[author]
+    name = "rtgnx"
+    twitter = "http://twitter.com/rtgnx_"
+    url = "http://github.com/rtgnx"
+

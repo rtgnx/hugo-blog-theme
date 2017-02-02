@@ -1,0 +1,18 @@
+<nav aria-label='...'>
+    <ul class="pager">
+        {{ if or .Paginator.HasPrev }}
+            <li>
+                <a href="{{ .Paginator.Prev.URL }}">
+                    Newer <span aria-hidden="true">&rarr;</span>
+                </a>
+            </li>
+        {{ end }}
+        {{ if .Paginator.HasNext }}
+            <li>
+                <a href="{{ .Paginator.Next.URL }}">
+                    Older <span aria-hidden="true">&rarr;</span>
+                </a>
+            </li>
+        {{ end }}
+    </ul>
+</nav>
