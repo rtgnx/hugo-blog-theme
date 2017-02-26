@@ -24,7 +24,9 @@
 
 body {
     background-color: darken(#0267c1, 20%);
-    background: repeating-linear-gradient( 45deg, #01315c, #01315c 50px, #175185 50px, #175185 100px );
+    // CSS Stripes
+    //background: repeating-linear-gradient( 45deg, #01315c, #01315c 50px, #175185 50px, #175185 100px );
+    background-image: linear-gradient(#01315c, #01315c);
     color: #fff;
 }
 
@@ -32,6 +34,11 @@ body {
     margin-top: 40px;
     background-color: darken(#0267c1, 20%);
     margin-bottom: 40px;
+    background-image: linear-gradient(#01315c, #01315c);
+    background-color: transparent;
+    background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
+    height:100%;
+    background-size:50px 50px;
 }
 
 div.posts {
