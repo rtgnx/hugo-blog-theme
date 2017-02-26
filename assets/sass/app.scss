@@ -22,9 +22,16 @@
     src: local('Bitwise'), url('/fonts/bitwise.woff') format('woff');
 }
 
-html, body {
+body {
     background-color: darken(#0267c1, 20%);
+    background: repeating-linear-gradient( 45deg, #01315c, #01315c 50px, #175185 50px, #175185 100px );
     color: #fff;
+}
+
+.container {
+    margin-top: 40px;
+    background-color: darken(#0267c1, 20%);
+    margin-bottom: 40px;
 }
 
 div.posts {
