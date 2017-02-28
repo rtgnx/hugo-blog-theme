@@ -1,6 +1,8 @@
 // Font awesome
 @import "../../node_modules/font-awesome/scss/font-awesome.scss";
 
+@import "../../node_modules/highlight.js/styles/atelier-cave-dark";
+
 // Custom variables
 @import "_variables.scss";
 
@@ -14,6 +16,7 @@
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Monda|Titillium+Web');
 
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
+
 
 @font-face {
     font-family: 'Bitwise';
@@ -44,6 +47,11 @@ body {
 div.posts {
     margin-top: 10px;
     margin-left: 10px;
+}
+
+
+pre {
+    padding: 0;
 }
 
 div.sidebar {
