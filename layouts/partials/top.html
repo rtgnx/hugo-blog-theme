@@ -1,19 +1,53 @@
 <div class="top">
-    <div class="container-fluid">
-        <span class="pull-right">
-            <ul id='navbar' class="nav nav-pills top-nav">
-                <li id='blog-link' class="active top-nav-item" role="presentation">
-                    <a href="/"> Blog </a>
-                </li>
+  <div class="row">
+    <div class="col-7">
+      <ul class="nav">
+        <li class="active nav-item">
+          <a href="/"> Blog </a>
+        </li>
 
-                <li id='projects-link' class="top-nav-item" role="presentation">
-                    <a href="/projects"> Projects </a>
-                </li>
+        <li class="nav-item">
+          <a href="/projects"> Projects </a>
+        </li>
 
-                <li id='about-link' class="top-nav-item" role="presentation">
-                    <a href="/about"> About </a>
-                </li>
-            </span>
-        </ul>
+        <li class="nav-item">
+          <a href="/about"> About </a>
+        </li>
+      </ul>
     </div>
+
+    <div class="col-5">
+      <nav class="nav">
+        <ul class="nav">
+          {{ with .Site.Params.keybaseName }}
+          <li class="nav-item">
+            <a class="social-btn" href="https://keybase.io/{{ . }}">
+              <i class="fa fa-key"></i> Keybase
+            </a>
+          </li>
+          {{ end }}
+          {{ with .Site.Params.twitterName }}
+          <li class="nav-item">
+            <a class="social-btn" href="https://twitter.com/{{ . }}">
+              <i class="fa fa-twitter"></i> Twitter
+            </a>
+          </li>
+          {{ end }}
+          {{ with .Site.Params.githubName }}
+          <li class="nav-item">
+            <a class="social-btn" href="https://github.com/{{ . }} ">
+              <i class="fa fa-github-alt"></i> GitHub
+            </a>
+          </li>
+          {{ end }}
+          <li class="nav-item">
+            <a class="social-btn" href="{{ .Site.BaseURL }}/index.xml">
+              <i class="fa fa-rss"></i> RSS
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
 </div>

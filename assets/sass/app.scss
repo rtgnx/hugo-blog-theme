@@ -3,70 +3,60 @@
 
 @import "./highlight/solarized-dark";
 
+@import "rwd.scss";
+
 // Custom variables
 @import "_variables.scss";
 
-// Bootstrap
-@import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import url('https://fonts.googleapis.com/css?family=VT323&subset=latin-ext');
 
-@import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa');
-
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Titillium+Web');
-
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Monda|Titillium+Web');
-
-@import url('https://fonts.googleapis.com/css?family=Orbitron');
-
-
-@font-face {
-    font-family: 'Bitwise';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Bitwise'), url('/fonts/bitwise.woff') format('woff');
+html {
+  background: repeating-linear-gradient(
+    45deg,
+    #01315c,
+    #01315c 50px,
+    #175185 50px,
+    #175185 100px
+  );
 }
 
 body {
-    background-color: darken(#0267c1, 20%);
-    // CSS Stripes
-    //background: repeating-linear-gradient( 45deg, #01315c, #01315c 50px, #175185 50px, #175185 100px );
-    background-image: linear-gradient(#01315c, #01315c);
-    color: #fff;
+  color: #fff;
+}
+
+h4.brand-title>a {
+  text-decoration: none;
+  color: #fff;
+  text-align: right;
+  font-family: 'VT323', monospace;
 }
 
 .container {
-    margin-top: 40px;
-    background-color: darken(#0267c1, 20%);
-    margin-bottom: 40px;
-    background-image: linear-gradient(#01315c, #01315c);
-    background-color: transparent;
-    background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
-    height:100%;
-    background-size:50px 50px;
+  height:100%;
 }
 
 div.posts {
-    margin-top: 10px;
-    margin-left: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #01315c;
+  background-color: rgba(1, 49,  92, 0.8);
+  font-family: 'VT323', monospace;
 }
 
 
 pre {
-    padding: 0;
+  padding: 0;
 }
 
 div.sidebar {
 }
 
-div.sidebar-col {
-    padding-right: 0px;
-}
-
 h4.section-title {
-    font-family: 'Bitwise', normal;
+  font-family: 'Bitwise', normal;
+  font-family: 'VT323', monospace;
 }
 
 
-@import "./sidebar.scss";
 
 @import "./post.scss";
 
