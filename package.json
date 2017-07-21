@@ -1,7 +1,5 @@
 {
   "devDependencies": {
-    "bootstrap": "^3.3.7",
-    "bootstrap-sass": "^3.3.7",
     "font-awesome": "^4.7.0",
     "fs": "0.0.1-security",
     "gulp": "^3.9.1",
