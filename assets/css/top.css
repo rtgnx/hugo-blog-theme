@@ -19,3 +19,17 @@ ul.nav>li.nav-item {
   font-family: 'VT323', monospace;
   font-size: 1.8em;
 }
+
+.nav-item>a:hover {
+  color: #ff2020;
+}
+
+a.social-btn {
+  font-size: 1.4em;
+  color: #ca8888;
+}
+
+
+a.social-btn:hover {
+  color: #ff2020;
+}
