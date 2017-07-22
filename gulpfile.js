@@ -9,7 +9,7 @@ const cssConcat = require('gulp-concat-css');
 
 gulp.task('css', function() {
     return gulp.src('./assets/css/*.css')
-        .pipe(cssConcat('./static/css/app.css', { rebaseUrls: false}))
+        .pipe(cssConcat('./app.css', { rebaseUrls: false}))
         .pipe(gulp.dest('./static/css/'));
 });
 
