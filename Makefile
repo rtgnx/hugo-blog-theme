@@ -6,4 +6,4 @@ modules: package.json
 
 gulp: gulpfile.js modules
 	npm install -g gulp && gulp
-	cp -ab assets/css/highlight static/css/
+	cp -a assets/css/highlight static/css/
