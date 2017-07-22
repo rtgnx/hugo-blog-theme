@@ -1,15 +1,15 @@
 'use strict';
 
 const gulp = require('gulp')
-const sass =  require('gulp-sass');
 const watch = require('gulp-watch')
 const webpack = require('gulp-webpack')
+const cssConcat = require('gulp-concat-css');
 
 
 
-gulp.task('sass', function() {
-    return gulp.src('./assets/sass/*.scss')
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+gulp.task('css', function() {
+    return gulp.src('./assets/css/*.css')
+        .pipe(cssConcat('./static/css/app.css', { rebaseUrls: false}))
         .pipe(gulp.dest('./static/css/'));
 });
 
@@ -23,7 +23,7 @@ gulp.task('js', function() {
         })).pipe(gulp.dest('./static/js/'));
 });
 
-gulp.task('default', ['sass', 'js', 'copyfonts']);
+gulp.task('default', ['css', 'js', 'copyfonts']);
 
 
 

@@ -3,11 +3,6 @@
 
 @import "./highlight/solarized-dark";
 
-@import "rwd.scss";
-
-// Custom variables
-@import "_variables.scss";
-
 @import url('https://fonts.googleapis.com/css?family=VT323&subset=latin-ext');
 
 html {
@@ -55,9 +50,3 @@ h4.section-title {
   font-family: 'Bitwise', normal;
   font-family: 'VT323', monospace;
 }
-
-
-
-@import "./post.scss";
-
-@import "./top.scss";

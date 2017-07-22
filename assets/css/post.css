@@ -1,7 +1,5 @@
 
 .post-content {
-  // For brosers that don't support gradient;
-  //background: -webkit-linear-gradient(left top, #0267c1, darken(#0267c1, 20%));
 
   border-left-width: 1.2px;
   border-left-style: solid;
