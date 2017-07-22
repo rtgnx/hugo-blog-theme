@@ -10,17 +10,18 @@
 a.post-title {
   font-family: 'VT323', monospace;
   font-size: 1.5em;
-  color: #ffc;
+  color: #8e8e65;
 }
 
 article.post-content {
   font-family: 'Titillium Web', sans-serif;
   font-family: 'VT323', monospace;
-  font-size: 1.6em;
+  font-size: 1.4em;
+  color: #00c1b1;
 }
 
 a.post-category {
-  color: #fff;
+  color: #1dbce2;
   margin-left: 10px;
   font-family: 'VT323', monospace;
   font-size: 1.2em;
